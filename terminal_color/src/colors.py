@@ -29,3 +29,9 @@ def setcolor(color):
 def reset():
     print(COLORS["reset"], end="")
 
+def show_colors():
+    print("\n ==)) ДОСТУПНЫЕ ЦВЕТА ==)) \n")
+    for name, code in COLORS.items():
+        if name != "reset":
+            print(f"{code}{name}{COLORS['reset']}")
+    print()
