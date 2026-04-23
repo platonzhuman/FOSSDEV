@@ -22,7 +22,7 @@ COLORS = {
 
 def setcolor(color):
     if color not in COLORS:
-        print(f"Ошибка: цвет '{color}' не найден")
+        print(f"Error: color '{color}' not found")
         return
     print(COLORS[color], end="")
 
@@ -30,7 +30,7 @@ def reset():
     print(COLORS["reset"], end="")
 
 def show_colors():
-    print("\n ==)) ДОСТУПНЫЕ ЦВЕТА ==)) \n")
+    print("\n ==)) READY COLOR ==)) \n")
     for name, code in COLORS.items():
         if name != "reset":
             print(f"{code}{name}{COLORS['reset']}")

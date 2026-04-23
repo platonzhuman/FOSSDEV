@@ -1,4 +1,4 @@
-from src.colors import COLORS, setcolor, reset
+from colors import COLORS, setcolor, reset
 
 def test_color():
     assert "red" in COLORS
@@ -7,7 +7,7 @@ def test_color():
     assert "reset" in COLORS
 
 def test_reset():
-    assert COLORS["reset"] == "\003[0m"
+    assert COLORS["reset"] == "\033[0m"
 
 def test_bad():
     setcolor("badcolor")

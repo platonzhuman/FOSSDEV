@@ -18,6 +18,14 @@ pip install --index-url https://test.pypi.org/simple/ terminal-color-tool
 
 ## Использование
 
+### Изменение цвета вводимых команд и фона
+Чтобы изменить цвет текста, который вы вводите, или фон терминала, используйте eval:
+
+bash
+eval "$(terminal-color red)"        # вводимый текст станет красным
+eval "$(terminal-color bg_green)"   # фон станет зелёным
+eval "$(terminal-color --reset)"    # сбросить всё к стандартному
+
 ### Цвета текста
 
 ```bash
