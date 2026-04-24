@@ -1,8 +1,0 @@
-README.md
-setup.py
-src/terminal_color_tool.egg-info/PKG-INFO
-src/terminal_color_tool.egg-info/SOURCES.txt
-src/terminal_color_tool.egg-info/dependency_links.txt
-src/terminal_color_tool.egg-info/entry_points.txt
-src/terminal_color_tool.egg-info/top_level.txt
-tests/test_color.py

@@ -1,6 +1,8 @@
 # Terminal Color
 
 Утилита для смены цвета терминала через ANSI-коды.
+Данная программа создана для минималистов, которым просто хочется настроить часть своего терминала одной двумя командами (или больше ^_^)
+Я собрал интересные пару фишек как для редактирования вписываемого текста прямо в терминале, так и для просто изменения ввода команд (может и добавлю что-то еще ^_^)
 
 ## Возможности
 
@@ -12,8 +14,8 @@
 
 ## Установка
 
-```bash
-pip install --index-url https://test.pypi.org/simple/ terminal-color-tool
+```
+pip install --index-url https://test.pypi.org/simple/ terminal-color-tool==0.1.2
 ```
 
 ## Использование
@@ -26,7 +28,7 @@ eval "$(terminal-color red)"        # вводимый текст станет �
 eval "$(terminal-color bg_green)"   # фон станет зелёным
 eval "$(terminal-color --reset)"    # сбросить всё к стандартному
 
-### Цвета текста
+### Цвета текста, который вводится в терминале как, допустим, в echo :\
 
 ```bash
 terminal-color red       # красный
@@ -39,6 +41,12 @@ terminal-color white     # белый
 terminal-color black     # чёрный
 ```
 
+```
+ПРИМЕР (вставь это в терминал ^_^): 
+terminal-color yellow 
+echo "Привет мир ! "
+```
+
 ### Цвета фона
 
 ```bash
@@ -46,6 +54,12 @@ terminal-color bg_red     # красный фон
 terminal-color bg_green   # зелёный фон
 terminal-color bg_blue    # синий фон
 terminal-color bg_yellow  # жёлтый фон
+```
+
+```
+ПРИМЕР (вставь это в терминал ^_^): 
+terminal-color bg_yellow 
+echo "Привет мир ! "
 ```
 
 ### Стили текста
@@ -73,7 +87,7 @@ echo "Этот текст обычный"
 
 ## Документация
 
-Подробная документация в файле [docs/index.md](docs/index.md)
+Подробная документация по установке с нуля в файле [docs/index.md](docs/index.md)
 
 ## Разработка
 
