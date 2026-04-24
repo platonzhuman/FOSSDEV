@@ -60,11 +60,11 @@ terminal-color --reset
 ```
 deactivate
 ```
-```
+
 
 ## Ссылки
 
 - [Исходный код на GitHub](https://github.com/platonzhuman/FOSSDEV)
 - [Пакет на Test PyPI](https://test.pypi.org/project/terminal-color-tool/)
 - Автор: NoName ^_^ (77pl77@inbox.ru)
-```
+
