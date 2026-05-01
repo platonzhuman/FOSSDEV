@@ -1,4 +1,4 @@
-def print(board):
+def print_b(board):
     for row in board:
         print(" | ".join(cell if cell else " " for cell in row))
         print("-" * 9)
@@ -32,7 +32,7 @@ def main():
             continue
 
         board[x][y] = players[turn]
-        print(board)
+        print_b(board)
 
         if check_win(board, players[turn]):
             print(f"\nигрок {turn+1} ({players[turn]}) победил!")
